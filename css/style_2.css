@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header, nav, figure, main {
+    margin-top: 30px;
+}
+
+header:first-child {
+    height: 100px;
+    background-color: red;
+}
+
+nav {
+    height: 50px;
+    background-color: orange;
+}
+
+figure {
+    height: 400px;
+    background-color: blue;
+}
+
+main>header:last-of-type {
+    height: 100px;
+    background-color: yellow;
+}
+
+.main-content {
+    height: 400px;
+    margin: 25px 0 20px 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.main-content>section {
+    height: 400px;
+}
+
+.main-content>section:not(.center) {
+    background-color: yellowgreen;
+}
+
+.left {
+    width: calc(25% - 10px);
+    margin-right: 10px;
+}
+
+.center {
+    background-color: green;
+    width: calc(50% - 20px);
+    margin: 0 10px 0 10px;
+}
+
+.right {
+    width: calc(25% - 10px);
+    margin-left: 10px;
+}
+
+footer {
+    height: 50px;
+    background-color: goldenrod;
+    margin: 10px 0 30px 0;
+}
