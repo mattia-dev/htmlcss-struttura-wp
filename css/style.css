@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -16,7 +16,7 @@
 }
 
 header, nav, figure, main {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 header:first-child {
@@ -39,6 +39,11 @@ main>header:last-of-type {
     background-color: yellow;
 }
 
+.main-content {
+    height: 400px;
+    margin: 25px 0 20px 0;
+}
+
 .fl {
     float: left;
 }
@@ -51,19 +56,27 @@ main>header:last-of-type {
     height: 400px;
 }
 
-.main-content>section:not(.center) {
+.main-content>section:not(.center-content) {
     width: 25%;
     background-color: yellowgreen;
 }
 
-.center {
+.center-content {
     width: 50%;
     background-color: green;
+    padding: 0 10px 0 10px;
+}
+
+.left-content {
+    padding-right: 10px;
+}
+
+.right-content {
+    padding-left: 10px;
 }
 
 footer {
     height: 50px;
     background-color: goldenrod;
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin: 10px 0 30px 0;
 }
