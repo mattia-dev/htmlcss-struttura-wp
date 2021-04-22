@@ -52,27 +52,33 @@ main>header:last-of-type {
     float: right;
 }
 
-.main-content>section {
-    height: 400px;
-}
-
-.main-content>section:not(.center-content) {
+.left, .right {
     width: 25%;
-    background-color: yellowgreen;
 }
 
-.center-content {
-    width: 50%;
-    background-color: green;
-    padding: 0 10px 0 10px;
-}
-
-.left-content {
+.left {
     padding-right: 10px;
 }
 
-.right-content {
+.right {
     padding-left: 10px;
+}
+
+.center {
+    width: 50%;
+    padding: 0 10px 0 10px;
+}
+
+.left-content, .center-content, .right-content {
+    height: 400px;
+}
+
+.left-content, .right-content {
+    background-color: greenyellow;
+}
+
+.center-content {
+    background-color: green;
 }
 
 footer {
