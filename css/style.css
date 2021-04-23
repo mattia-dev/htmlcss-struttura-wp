@@ -19,7 +19,7 @@ header, nav, figure, main {
     margin-top: 30px;
 }
 
-header:first-child {
+.container>header {
     height: 100px;
     background-color: red;
 }
@@ -34,13 +34,12 @@ figure {
     background-color: blue;
 }
 
-main>header:last-of-type {
+main>header {
     height: 100px;
     background-color: yellow;
 }
 
 .main-content {
-    height: 400px;
     margin: 25px 0 20px 0;
 }
 
